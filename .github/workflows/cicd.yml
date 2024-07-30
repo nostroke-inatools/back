@@ -54,7 +54,7 @@ jobs:
       - name: ⚙️ Create .env file
         run: |
           touch ${{ env.ENV_PATH }}
-          echo SOCKET_PORT=${{ secrets.SOCKET_PORT }} >> ${{ env.ENV_PATH }
+          echo SOCKET_PORT=${{ secrets.SOCKET_PORT }} >> ${{ env.ENV_PATH }}
 
       - name: 📦 Zip project files
         run: zip -r ./$GITHUB_SHA.zip .
