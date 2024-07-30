@@ -43,7 +43,7 @@ public class MemberController {
     }
 
     /**
-     * 회원 정보 수정 API
+     * 회원 로그인 API
      */
     @Operation(summary = "로그인", description = "사용자가 로그인을 진행합니다.")
     @PostMapping("/login")
