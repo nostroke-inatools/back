@@ -23,6 +23,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '21'
+          distribution: 'temurin' # 사용할 JDK 배포판 지정
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
