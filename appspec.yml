@@ -2,23 +2,17 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/api/api_back
-  - source: /nginx
-    destination: /home/api/nginx
-  - source: /config/
-    destination: /home/api/config
-  - source: /.env
-    destination: /home/api
-file_exists_behavior: OVERWRITE
+    destination: /home/ubuntu/dongoorami
+    overwrite: yes
 
 permissions:
-  - object: /home/api
-    pattern: '**'
-    owner: root
-    group: root
+  - object: /
+    pattern: "**"
+    owner: ubuntu
+    group: ubuntu
 
 hooks:
-  AfterInstall:
-    - location: scripts/after-deploy.sh
-      timeout: 2000
-      runas: root
+  ApplicationStart:
+    - location: /scripts/deploy.sh
+      timeout: 60
+      runas: ubuntu
