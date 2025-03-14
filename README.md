@@ -120,6 +120,8 @@ Github Actions를 활용한 CI/CD 파이프라인을 통해 자동화된 빌드 
 # 🧾 ERD
 <a href="https://www.erdcloud.com/d/oT2ZTB2d5Tevo5WjX">![image](https://github.com/user-attachments/assets/c80b5b40-74b0-42de-ae48-a7c5bf104e5f)
 
+<br/>
+
 # 🏆 공모전 수상
 
 - 사이드임팩트 스파크 트랙
